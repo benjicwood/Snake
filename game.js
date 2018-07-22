@@ -1,5 +1,5 @@
-window.onload=function() {
-    canv=document.getElementById("gc");
+window.onload = function () {
+    canv=document.getElementById("snakegame");
     ctx=canv.getContext("2d");
     document.addEventListener("keydown",keyPush);
     setInterval(game,1000/15);
@@ -10,6 +10,7 @@ ax=ay=15;
 xv=yv=0;
 trail=[];
 tail = 5;
+
 function game() {
     px+=xv;
     py+=yv;
